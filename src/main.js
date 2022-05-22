@@ -66,7 +66,7 @@ function App() {
   return (
     <Container>
       <Logo>nbd</Logo>
-      <Description>open source bitcoin & lightning development</Description>
+      <Description>open-source bitcoin & lightning development</Description>
       <Socials>
         <Twitter src='/images/twitter.svg' onClick={() => openURL(TWITTER_URL)} />
         <GitHub src='/images/github.svg' onClick={() => openURL(GITHUB_URL)} />

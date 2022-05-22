@@ -1,6 +1,6 @@
 # nbd
 
-open source bitcoin & lightning development
+open-source bitcoin & lightning development
 
 ## Available Scripts
 
