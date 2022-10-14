@@ -8,7 +8,6 @@ import {
   ContentDescriptionWrapper,
   ContentDescriptionItemTitle,
   ContentDescriptionItemDivider,
-  ContentDescriptionItemText,
   ContentGridWrapper,
   ContentGridItemDescription,
   ContentGridItemTitle,

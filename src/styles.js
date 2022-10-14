@@ -1,4 +1,20 @@
 import styled from 'styled-components';
+import { css } from 'styled-components';
+
+const screenSize = {
+  desktop: 1140,
+  tablet: 768,
+};
+
+const media: { [string]: Function } = Object.keys(screenSize).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (min-width: ${screenSize[label]}px) {
+      ${css(...args)};
+    }
+  `;
+  return acc;
+}, {});
+
 
 export const Wrapper = styled.div``;
 
@@ -17,6 +33,7 @@ export const ContentVideoWrapper = styled.div`
 `;
 export const ContentVideoItem = styled.img`
     width: 540px;
+    max-width: 100%;
 `;
 export const ContentDescriptionWrapper = styled.div`
     display: flex;
@@ -24,7 +41,8 @@ export const ContentDescriptionWrapper = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 600px;
+    max-width: 100%;
+    width: 600px;
     margin: 0 auto;
 `;
 export const ContentDescriptionItemTitle = styled.div`
@@ -45,10 +63,22 @@ export const ContentGridWrapper = styled.div`
 `;
 export const ContentGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 20px;
+
+    ${media.tablet`
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    `};
+
+    ${media.desktop`
+        padding: 0;
+        grid-template-columns: repeat(3, 1fr);
+    `};
 `;
 export const ContentGridItem = styled.div`
     background: #fff;
@@ -69,17 +99,27 @@ export const ContentGridItemTitle = styled.div`
 `;
 export const ContentGridItemDescription = styled.div``;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+    padding: 0 20px;
+    ${media.tablet`
+        padding: 0;
+    `};
+`;
 export const HeaderInnerWrapper = styled.div`
-    max-width: 950px;
-    margin: 40px auto 20px auto;
+    padding: 12px 25px;
     border: 1px solid #fff;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 65px;
+    margin: 20px auto;
+
+    ${media.desktop`
+        padding: 12px 65px;
+        max-width: 950px;
+        margin: 40px auto 20px auto;
+    `};
 `;
 export const HeaderLogo = styled.img`
     width: 95px;
@@ -107,7 +147,12 @@ export const HeaderMenuItemPrimary = styled.div`
     cursor: pointer;
 `;
 
-export const Footer = styled.div``;
+export const Footer = styled.div`
+    padding: 0 20px;
+    ${media.tablet`
+        padding: 0;
+    `};
+`;
 export const FooterInnerWrapper = styled.div`
     max-width: 950px;
     margin: 0 auto 60px auto;
