@@ -5,46 +5,52 @@ export const SOCIAL = [
     },
     {
         type: 'telegram',
-        value: 'https://twitter.com/nbd_wtf',
-    },
-    {
-        type: 'twitter',
-        value: 'https://twitter.com/nbd_wtf',
+        value: 'https://t.me/nbd_wtf',
     },
 ];
 
 export const MENU = [
     {
         type: 'secondary',
-        link: 'https://google.com',
+        link: 'mailto:nbd@zebedee.io',
         label: 'Contact',
     },
     {
         type: 'primary',
-        link: 'https://google.com',
-        label: 'Log In',
+        link: 'https://zebedee.io',
+        label: 'Visit ZEBEDEE',
     }
 ];
 
 export const PROJECTS = [
     {
         name: 'OBW',
-        description: 'Esse quis laborum sunt in culpa irure esse ex sint aliqua et dolore ex est.',
+        description: 'Non-custodial onchain and LN wallet featuring hosted channel support',
+        link: 'https://github.com/nbd-wtf/obw',
     },
     {
-        name: 'OBW',
-        description: 'Esse quis laborum sunt in culpa irure esse ex sint aliqua et dolore ex est.',
+        name: 'Poncho',
+        description: 'CoreLightning plugin that gives nodes hosted channel powers',
+        link: 'https://github.com/fiatjaf/poncho',
     },
     {
-        name: 'OBW',
-        description: 'Esse quis laborum sunt in culpa irure esse ex sint aliqua et dolore ex est.',
+        name: 'Cliche',
+        description: 'Lightning node daemon with full support for hosted channels',
+        link: 'https://github.com/nbd-wtf/cliche',
     },
     {
-        name: 'OBW',
-        description: 'Esse quis laborum sunt in culpa irure esse ex sint aliqua et dolore ex est.',
+        name: 'Immortan',
+        description: 'Libraries that give Bitcoin wallets LN plug-n-play solutions',
+        link: 'https://github.com/nbd-wtf/immortan',
     },
     {
-        name: 'OBW',
-        description: 'Esse quis laborum sunt in culpa irure esse ex sint aliqua et dolore ex est.',
+        name: 'Satdress',
+        description: 'A federated server that hands out Lightning Addresses on demand',
+        link: 'https://github.com/nbd-wtf/satdress',
+    },
+    {
+        name: 'LN Decoder',
+        description: 'Decode the data in various LN QR code and payment request types',
+        link: 'https://github.com/andrerfneves/lightning-decoder',
     },
 ];

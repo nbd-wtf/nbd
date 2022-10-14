@@ -46,18 +46,18 @@ function App() {
             <HeaderLogo src={logo} />
           </HeaderLogoWrapper>
           <HeaderCenter>
-            Visit ZEBEDEE
+             
           </HeaderCenter>
           <HeaderMenu>
             {MENU.map((item) => (
               <>
                 {item.type === 'primary' && (
-                  <HeaderMenuItemPrimary>
+                  <HeaderMenuItemPrimary onClick={() => window.open(item.link, '_blank')}>
                     {item.label}
                   </HeaderMenuItemPrimary>
                 )}
                 {item.type === 'secondary' && (
-                  <HeaderMenuItemSecondary>
+                  <HeaderMenuItemSecondary onClick={() => window.open(item.link, '_blank')}>
                     {item.label}
                   </HeaderMenuItemSecondary>
                 )}
@@ -76,15 +76,12 @@ function App() {
               An open-source initiative from ZEBEDEE
             </ContentDescriptionItemTitle>
             <ContentDescriptionItemDivider />
-            <ContentDescriptionItemText>
-              Fugiat aute consequat anim nulla culpa nostrud labore pariatur tempor excepteur ut anim adipisicing aute. Commodo duis eiusmod labore officia tempor. Dolore excepteur fugiat ex non deserunt.
-            </ContentDescriptionItemText>
           </ContentDescriptionWrapper>
           <ContentGridWrapper>
             <ContentGrid>
               {PROJECTS.map((item) => (
                 <ContentGridItemOuterWrapper>
-                  <ContentGridItem>
+                  <ContentGridItem onClick={() => window.open(item.link, '_blank')}>
                     <ContentGridItemTitle>{item.name}</ContentGridItemTitle>
                     <ContentGridItemDescription>{item.description}</ContentGridItemDescription>
                   </ContentGridItem>
@@ -103,10 +100,10 @@ function App() {
             {SOCIAL.map(item => (
               <FooterSocialItem>
                 {item.type === 'twitter' && (
-                  <FooterSocialItemTwitter src={twitterLogo} />
+                  <FooterSocialItemTwitter onClick={() => window.open(item.link, '_blank')} src={twitterLogo} />
                 )}
                 {item.type === 'telegram' && (
-                  <FooterSocialItemTelegram src={telegramLogo} />
+                  <FooterSocialItemTelegram onClick={() => window.open(item.link, '_blank')} src={telegramLogo} />
                 )}
               </FooterSocialItem>
             ))}

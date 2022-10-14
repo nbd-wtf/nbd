@@ -96,6 +96,7 @@ export const HeaderMenuItemSecondary = styled.div`
     background: #000;
     color: #fff;
     padding: 8px 16px;
+    cursor: pointer;
 `;
 export const HeaderMenuItemPrimary = styled.div`
     border-radius: 50px;
@@ -103,6 +104,7 @@ export const HeaderMenuItemPrimary = styled.div`
     background: #fff;
     color: #000;
     padding: 8px 16px;
+    cursor: pointer;
 `;
 
 export const Footer = styled.div``;
