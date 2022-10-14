@@ -180,9 +180,13 @@ export const FooterInnerWrapper = styled.div`
     border-top: 1px solid #fff;
     padding-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 20px; 
+    ${media.tablet`
+        flex-direction: row;
+    `};
 
     ${media.desktop`
         max-width: 950px;
