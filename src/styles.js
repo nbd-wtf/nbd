@@ -18,18 +18,31 @@ const media: { [string]: Function } = Object.keys(screenSize).reduce((acc, label
 
 export const Wrapper = styled.div``;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+    padding: 0 20px;
+    ${media.desktop`
+        padding: 0;
+    `};
+`;
 export const ContentInnerWrapper = styled.div`
-    max-width: 950px;
     margin: 0 auto;
+    max-width: 100%;
+    ${media.desktop`
+        max-width: 950px;
+    `};
 `;
 export const ContentVideoWrapper = styled.div`
-    max-width: 950px;
+    margin: 0 auto;
+    max-width: 100%;
     margin: 60px auto 40px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    ${media.desktop`
+        max-width: 950px;
+    `};
 `;
 export const ContentVideoItem = styled.img`
     width: 540px;
@@ -67,7 +80,7 @@ export const ContentGrid = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    padding: 20px;
+    padding: 0;
 
     ${media.tablet`
         grid-template-columns: repeat(2, 1fr);
@@ -76,7 +89,6 @@ export const ContentGrid = styled.div`
     `};
 
     ${media.desktop`
-        padding: 0;
         grid-template-columns: repeat(3, 1fr);
     `};
 `;
@@ -101,7 +113,7 @@ export const ContentGridItemDescription = styled.div``;
 
 export const Header = styled.div`
     padding: 0 20px;
-    ${media.tablet`
+    ${media.desktop`
         padding: 0;
     `};
 `;
@@ -124,11 +136,19 @@ export const HeaderInnerWrapper = styled.div`
 export const HeaderLogo = styled.img`
     width: 95px;
 `;
-export const HeaderLogoWrapper = styled.div``;
+export const HeaderLogoWrapper = styled.div`
+    margin: 0 auto;
+    ${media.tablet`
+        margin: 0;
+    `};
+`;
 export const HeaderCenter = styled.div``;
 export const HeaderMenu = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: none;
+    ${media.tablet`
+        display: flex;
+        flex-direction: row;
+    `};
 `;
 export const HeaderMenuItemSecondary = styled.div`
     border-radius: 50px;
@@ -154,7 +174,8 @@ export const Footer = styled.div`
     `};
 `;
 export const FooterInnerWrapper = styled.div`
-    max-width: 950px;
+    margin: 0 auto;
+    max-width: 100%;
     margin: 0 auto 60px auto;
     border-top: 1px solid #fff;
     padding-top: 20px;
@@ -162,6 +183,10 @@ export const FooterInnerWrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    ${media.desktop`
+        max-width: 950px;
+    `};
 `;
 export const FooterCopyright = styled.div`
     font-size: 14px;
