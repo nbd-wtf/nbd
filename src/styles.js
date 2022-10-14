@@ -169,7 +169,7 @@ export const HeaderMenuItemPrimary = styled.div`
 
 export const Footer = styled.div`
     padding: 0 20px;
-    ${media.tablet`
+    ${media.desktop`
         padding: 0;
     `};
 `;
