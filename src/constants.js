@@ -1,11 +1,11 @@
 export const SOCIAL = [
     {
         type: 'twitter',
-        value: 'https://twitter.com/nbd_wtf',
+        link: 'https://twitter.com/nbd_wtf',
     },
     {
         type: 'telegram',
-        value: 'https://t.me/nbd_wtf',
+        link: 'https://t.me/nbd_wtf',
     },
 ];
 

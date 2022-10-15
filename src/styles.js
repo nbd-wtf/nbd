@@ -98,6 +98,7 @@ export const ContentGridItem = styled.div`
     border-radius: 8px;
     border: 1px solid #fff;
     padding: 14px 18px;
+    cursor: pointer;
 `;
 export const ContentGridItemOuterWrapper = styled.div`
     padding: 26px;
