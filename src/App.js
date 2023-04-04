@@ -94,7 +94,7 @@ function App() {
       <Footer>
         <FooterInnerWrapper>
           <FooterCopyright>
-            © 2022 NO BIG DEAL
+            © 2023 NO BIG DEAL
           </FooterCopyright>
           <FooterSocialWrapper>
             {SOCIAL.map(item => (
