@@ -24,6 +24,11 @@ export const MENU = [
 
 export const PROJECTS = [
     {
+        name: 'Nostr',
+        description: 'An open and decentralized communications protocol for social media',
+        link: 'https://github.com/nostr-protocol/nostr',
+    },
+    {
         name: 'OBW',
         description: 'Non-custodial onchain and LN wallet featuring hosted channel support',
         link: 'https://github.com/nbd-wtf/obw',
@@ -42,11 +47,6 @@ export const PROJECTS = [
         name: 'Immortan',
         description: 'Libraries that give Bitcoin wallets LN plug-n-play solutions',
         link: 'https://github.com/nbd-wtf/immortan',
-    },
-    {
-        name: 'Satdress',
-        description: 'A federated server that hands out Lightning Addresses on demand',
-        link: 'https://github.com/nbd-wtf/satdress',
     },
     {
         name: 'LN Decoder',

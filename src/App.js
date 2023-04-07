@@ -93,7 +93,7 @@ function App() {
       <Footer>
         <FooterInnerWrapper>
           <FooterCopyright>
-            © 2022 NO BIG DEAL
+            © {new Date().getFullYear()} NO BIG DEAL
           </FooterCopyright>
           <FooterSocialWrapper>
             {SOCIAL.map(item => (
