@@ -1,0 +1,14 @@
+{
+  "names": {
+    "_": "72d3b3c8d52ae5ea0a37728f74551e732317a64f047ba0834f63cde4da7e22a8"
+  },
+  "relays": {
+    "72d3b3c8d52ae5ea0a37728f74551e732317a64f047ba0834f63cde4da7e22a8": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://nostr.zebedee.cloud",
+      "wss://eden.nostr.land",
+      "wss://nostr.milou.lol"
+    ]
+  }
+}
