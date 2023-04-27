@@ -8,7 +8,6 @@ import {
   ContentDescriptionWrapper,
   ContentDescriptionItemTitle,
   ContentDescriptionItemDivider,
-  ContentDescriptionItemText,
   ContentGridWrapper,
   ContentGridItemDescription,
   ContentGridItemTitle,
@@ -94,7 +93,7 @@ function App() {
       <Footer>
         <FooterInnerWrapper>
           <FooterCopyright>
-            © 2023 NO BIG DEAL
+            © {new Date().getFullYear()} NO BIG DEAL
           </FooterCopyright>
           <FooterSocialWrapper>
             {SOCIAL.map(item => (
